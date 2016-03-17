@@ -1,6 +1,6 @@
 # css-properties
 
-It is not uncommon to see a CSS class called `nowrap` which is declared as `white-space: nowrap`.  You'll find other similar classes in most major CSS frameworks such as Bootstrap.  For example, Bootstrap declares `pull-left` to be `float: left`.  It declares `hidden` to be `display: none !important` and so on.  These types of CSS classes are referred to as property-classes.
+It is not uncommon to see a CSS class called `nowrap` which is declared as `white-space: nowrap`.  You'll find other similar classes in most major CSS frameworks such as Bootstrap.  For example, Bootstrap declares `pull-left` to be `float: left !important`.  It declares `hidden` to be `display: none !important` and so on.  I refer to these types of CSS classes as property-classes.
 
 ## How It All Began
 
