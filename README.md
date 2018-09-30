@@ -24,13 +24,14 @@ Property-classes
 ## Advantages over Inline Styles
 
 1) Shorter markup.  Compare the following three `div`s.  The first two use property-classes.  The last one uses inline
-   styles.  In many cases, a `class` attribute already exists.  So, when using property-classes, there is no need to add
-   a new style attribute.  Comparing the second `div` markup to the third `div` markup, there is a savings of 9
-   characters.  Comparing the first `div` markup to the third `div` markup, there is a savings of 15 characters.
+   styles.  In many cases, a `class` attribute already exists but no `style` attribute exists yet.  So, when using
+   property-classes, there is no need to add a new `style` attribute.  Comparing the second `div` markup to the third
+   `div` markup, there is a savings of 9 characters.  Comparing the first `div` markup to the third `div` markup, there
+   is a savings of 15 characters.
 
-    <div class="MyComponent  hidden">...</div>
-    <div class="MyComponent  display-none">...</div>
-    <div class="MyComponent" style="display: none;">...</div>
+       <div class="MyComponent  hidden">...</div>
+       <div class="MyComponent  display-none">...</div>
+       <div class="MyComponent" style="display: none;">...</div>
 
 Some of the property-classes represent multiple declarations.  For example, the `display-flex` property-class uses
 several `display` declarations, each to handle the vendor specific values.
@@ -40,7 +41,7 @@ several `display` declarations, each to handle the vendor specific values.
 
 Image trying to rememeber all those vendor specific property values over the simple property-class name.
 
-2) Many times JavaScript is used to change the look of a component.  For example,  it is common to setup a button to
+2) Many times JavaScript is used to change the look of a component.  For example, it is common to setup a button to
    expand and collapse a panel component.  When the panel is collapsed, it might have a `hidden` property-class.  When
    it is expanded, the `hidden` property-class is removed.  This is a common idiom and is especially useful when the
    class represents several property declarations.
